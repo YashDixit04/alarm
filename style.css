@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+  }
+  
+  html {
+    height: 100%;
+    font-size: 62.5%;
+  }
+  
+  body {
+    background: rgb(36, 36, 43);
+  }
+  
+  .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70vh;
+    flex-direction: column;
+  }
+  .clockbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    flex-direction: column;
+  }
+  
+  .clockbox img {
+    height: 30rem;
+    padding: 20px;
+    filter: drop-shadow(1rem 1rem 1rem rgb(60, 4, 132));
+  }
+  #output {
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+
+  }
+  #alarm select {
+    padding: 1rem;
+    height: 5rem;
+    font-size: 1.5rem;
+    border: 3px solid black;
+    border-radius: 12px;
+    outline: none;
+    margin: 5px;
+  }
+  #alarm select:focus {
+    box-shadow: 0 0 4px #7e6ce4, 0 0 8px #7e6ce4, 0 0 12px #7e6ce4;
+  }
+  
+  .buttons {
+    margin: 20px;
+    text-align: center;
+  }
+  #para {
+    margin: 20px;
+    color: white;
+  }
+  #btn,
+  #clearAlarm {
+    color: white;
+    margin: 10px;
+    background: hsl(350, 80%, 55%);
+    border: 0;
+    border-radius: 24px;
+    padding: 8px 25px;
+    width: 150px;
+    text-align: center;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  #btn:hover,
+  #clearAlarm:hover {
+    box-shadow: 0 0 4px #2196f3, 0 0 8px #2196f3, 0 0 12px #2196f3;
+  
+    transform: scale(1.05);
+  }
+  
+  #rTime {
+    color: hsl(0, 100%, 99%);
+    background: rgb(22, 7, 7);
+    padding: 5px 20px;
+    border-radius: 15px;
+    text-align: center;
+  }
+  #clearAlarm {
+    background: grey;
+  }
+  
+  .note {
+    font-size: 1.7rem;
+    color: rgb(234, 117, 117);
+    padding: 12px;
+    word-spacing: 2px;
+  }
+  
+  .note a {
+    text-decoration: none;
+    color: cyan;
+  }
+  
+  @media (max-width: 768px) {
+    .clockbox img {
+      height: 20rem;
+    }
+    #output {
+        margin: 20px;
+        margin-top: 80px;
+        color: white;
+        text-align: center;
+    
+      }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .clockbox img {
+      height: 25rem;
+    }
+    #output {
+        margin: 20px;
+        margin-top: 80px;
+        color: white;
+        text-align: center;
+    
+      }
+  }
+  
