@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Alarm-clock Application</title>
+</head>
+
+<body>
+
+
+    <div class="box">
+        <div class="clockbox">
+            <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+            <lord-icon
+                src="https://cdn.lordicon.com/osvvqecf.json"
+                trigger="hover"
+                style="width:250px;height:250px">
+            </lord-icon>
+            <p id="rTime"></p>
+            <p id="para">🔔 Set Your Alarm ⏰</p>
+        </div>
+
+        <div id="alarm">
+
+            <select name="" id="hours">
+                <option value="" disabled selected hidden>Hours</option>
+            </select>
+
+
+            <select name="" id="mins">
+                <option value="" disabled selected hidden>Minutes</option>
+            </select>
+
+            <select name="" id="secs">
+                <option value="" disabled selected hidden>Secs</option>
+            </select>
+            <select name="" id="Am_Pm">
+                <option value="AM/PM" selected disabled hidden>AM/PM</option>
+            </select>
+
+
+        </div>
+        <div class="buttons">
+            <button id="btn">Set Alarm</button>
+            <button id="clearAlarm">Clear Alarm</button>
+        </div>
+    </div>
+
+    <div>
+        <h1 id="output"></h1>
+    </div>
+
+
+</body>
+<script src="alram.js"></script>
+
+</html>
