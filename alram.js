@@ -47,7 +47,7 @@ setInterval(() => {
 function bell() {
     audio.play();
     setTimeout(() => {
-        img.src = "https://png.pngtree.com/png-vector/20220330/ourmid/pngtree-time-management-concept-business-people-working-near-the-big-clock-schedule-png-image_4520217.png";
+        img.src = "sleeep.png";
         para.innerHTML = "🔔 Weak-UP Time ⏰"
     }, 10000);
 }
@@ -69,7 +69,7 @@ setAlarm.addEventListener("click", () => {
     if (alarmTime >= 0) {
         document.getElementById("output").innerHTML = `Your Alarm are registered Now!.`;
     } else {
-        document.getElementById("output").innerHTML  = `Samay se piche chalne ka shauk kyu hai aapko? Sahi se time daalo`;
+        document.getElementById("output").innerHTML = `Samay se piche chalne ka shauk kyu hai aapko? Sahi se time daalo`;
     }
 
 
@@ -77,19 +77,9 @@ setAlarm.addEventListener("click", () => {
     if (alarmTime >= 0) {
         setTimeout(() => {
             bell();
-            document.getElementById("imgbox").innerHTML =
-                `  
-            <div class="jumbotron", style= "width:250px;height:250px">
-                    <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
-                <lord-icon
-                    src="https://cdn.lordicon.com/mdbykuhq.json"
-                     trigger="loop"
-                     delay="2000"
-                    style="width:250px;height:250px">
-               </lord-icon>
-             </div> 
-`
-            para.innerHTML = "Arey bhai sone do mat jagao!";
+            img.src =  `wake.png`
+            output.innerHTML = "Arey bhai sone do mat jagao!";
+
         }, alarmTime);
     }
 });
@@ -99,9 +89,9 @@ const clearAlarm = document.getElementById("clearAlarm");
 
 clearAlarm.addEventListener("click", () => {
     audio.pause();
-    let a = document.getElementById("output").innerHTML = "Alarm Cleared";  
-   setInterval( () => { a.removeAttribute = " ";  }, 2000)
-  
+    let a = document.getElementById("output").innerHTML = "Alarm Cleared";
+    setInterval(() => { a.removeAttribute = " "; }, 2000)
+
     // img.src = "https://png.pngtree.com/png-vector/20220330/ourmid/pngtree-time-management-concept-business-people-working-near-the-big-clock-schedule-png-image_4520217.png";
 });
 
